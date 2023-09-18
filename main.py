@@ -14,7 +14,7 @@ response = app.client.conversations_list()
 channels = response["channels"]
 
 for channel in channels:
-    if (channel['name'] == 'gülümsetarihegeç' or channel['name'] == 'mesutinsanlarfotoğrafhanesi' or channel['name'] == 'genel'):
+    if (channel['name'] == 'channel_name1' or channel['name'] == 'channel_name2' or channel['name'] == 'channel_name3'):
         response = app.client.files_list(channel=channel["id"])
         files = response["files"]
         for file in files:
